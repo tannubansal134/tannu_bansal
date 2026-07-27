@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🍕 FoodieHub
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="menu.html" class="active">Menu</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <a href="cart.html" class="cart-btn">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            Cart
+
+        </a>
+
+    </header>
+
+    <section style="padding:40px; text-align:center;">
+
+        <h1>Our Delicious Menu</h1>
+
+        <br>
+
+        <input type="text" id="search" placeholder="Search Food..."
+            style="padding:12px; width:300px; border:1px solid gray; border-radius:6px;">
+
+    </section>
+
+    <div class="container">
+
+        <div class="card">
+
+            <img src="pizza.jpg">
+
+            <h3>Cheese Pizza</h3>
+
+            <p>₹299</p>
+
+            <button onclick="addCart('Cheese Pizza',299)">
+                Add to Cart
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="burger.jpg">
+
+            <h3>Veg Burger</h3>
+
+            <p>₹149</p>
+
+            <button onclick="addCart('Veg Burger',149)">
+                Add to Cart
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="pasta.jpg">
+
+            <h3>White Sauce Pasta</h3>
+
+            <p>₹249</p>
+
+            <button onclick="addCart('Pasta',249)">
+                Add to Cart
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="momo.jpg">
+
+            <h3>Momos</h3>
+
+            <p>₹180</p>
+
+            <button onclick="addCart('Momos',180)">
+                Add to Cart
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="fries.jpg">
+
+            <h3>French Fries</h3>
+
+            <p>₹120</p>
+
+            <button onclick="addCart('Fries',120)">
+                Add to Cart
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="coke.jpg">
+
+            <h3>Coca Cola</h3>
+
+            <p>₹60</p>
+
+            <button onclick="addCart('Coke',60)">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <p>© 2026 FoodieHub</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
