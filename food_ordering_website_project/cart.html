@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .cart-container {
+            width: 90%;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th,
+        table td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th {
+            background: #ff6600;
+            color: white;
+        }
+
+        button {
+            padding: 8px 15px;
+            border: none;
+            background: #ff6600;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e65c00;
+        }
+
+        .total {
+            margin-top: 25px;
+            text-align: right;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .checkout-btn {
+            display: inline-block;
+            margin-top: 20px;
+            background: green;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        .empty {
+            text-align: center;
+            font-size: 22px;
+            margin-top: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">🍕 FoodieHub</div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="menu.html">Menu</a></li>
+
+                <li><a href="cart.html" class="active">Cart</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <div class="cart-container">
+
+        <h1 align="center">🛒 Your Shopping Cart</h1>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Food</th>
+
+                    <th>Price</th>
+
+                    <th>Quantity</th>
+
+                    <th>Total</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="cart-items">
+
+            </tbody>
+
+        </table>
+
+        <div class="total">
+
+            Grand Total :
+            <span id="total">₹0</span>
+
+        </div>
+
+        <div style="text-align:right;">
+
+            <a href="checkout.html" class="checkout-btn">
+
+                Proceed To Checkout
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
