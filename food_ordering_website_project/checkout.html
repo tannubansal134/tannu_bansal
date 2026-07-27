@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .checkout {
+            width: 500px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+        }
+
+        .checkout h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .checkout input,
+        .checkout textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .checkout button {
+            width: 100%;
+            padding: 15px;
+            background: #ff6600;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .checkout button:hover {
+            background: #e65c00;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">🍕 FoodieHub</div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="menu.html">Menu</a></li>
+
+                <li><a href="cart.html">Cart</a></li>
+
+                <li><a href="checkout.html" class="active">Checkout</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <div class="checkout">
+
+        <h1>Checkout</h1>
+
+        <form action="success.html">
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="tel" placeholder="Mobile Number" required>
+
+            <input type="email" placeholder="Email Address" required>
+
+            <textarea rows="5" placeholder="Delivery Address" required></textarea>
+
+            <button type="submit">
+                Place Order
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
